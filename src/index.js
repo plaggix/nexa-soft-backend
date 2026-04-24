@@ -10,13 +10,7 @@ const projectsRoutes = require('./routes/projects');
 const adminRoutes = require('./routes/admin');
 
 const app = express();
-const prisma = new PrismaClient({
-  datasources: {
-    db: {
-      url: process.env.DATABASE_URL,
-    },
-  },
-});
+const prisma = new PrismaClient();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
