@@ -11,7 +11,7 @@ const adminRoutes = require('./routes/admin');
 
 const app = express();
 const prisma = new PrismaClient({
-  datasource: {
+  datasources: {
     db: {
       url: process.env.DATABASE_URL,
     },
