@@ -1,4 +1,5 @@
 require('dotenv').config();
+console.log("DB_URL check:", process.env.DATABASE_URL ? "Variable présente" : "Variable manquante");
 const express = require('express');
 const cors = require('cors');
 const { PrismaClient } = require('@prisma/client');
